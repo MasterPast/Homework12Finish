@@ -1,7 +1,7 @@
 import sys
 import shutil
 from pathlib import Path
-from .constants import RED, BLUE, YELLOW, CYAN, GRAY, WHITE, RESET
+from constants import RED, BLUE, YELLOW, CYAN, GRAY, WHITE, RESET
 
 
 CATEGORIES = {

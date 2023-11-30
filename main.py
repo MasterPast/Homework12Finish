@@ -1,4 +1,4 @@
-from .classes import (
+from classes import (
     Name,
     Phone,
     Email,
@@ -11,7 +11,7 @@ from .classes import (
     EmailError,
     NoContactError,
 )
-from .constants import (
+from constants import (
     TITLE,
     FILENAME,
     NOTE_FILENAME,
@@ -33,15 +33,15 @@ from .constants import (
     MAGENTA,
 )
 
-from .notes import NotesBook, NoteError, Title, Content, Tags, Note
+from notes import NotesBook, NoteError, Title, Content, Tags, Note
 
-from .get_birthday_on_date import get_birthdays_on_date
+from get_birthday_on_date import get_birthdays_on_date
 
 from prompt_toolkit.completion import NestedCompleter
 
 from prompt_toolkit import prompt
 
-from .sort_path import sorting
+from sort_path import sorting
 
 book = AddressBook()
 notes = NotesBook()
@@ -262,8 +262,8 @@ def add_note(*args):
 
 @user_error
 def edit_note(title, *args):
-    # Перевірка наявності тайтлу в 
-    new_content = ' '.join(args) 
+    # Перевірка наявності тайтлу в
+    new_content = ' '.join(args)
     print(f"{new_content = }")
     if title in notes.data:
         # Змінюємо тільки content
@@ -484,7 +484,7 @@ def birthday(days=0):
 
 
 COMMANDS = {
-    add: ("add","help_add"),
+    add: ("add", "help_add"),
     add_contact: ("add_record", "add_contact"),
     add_phones: ("add_phone", "add_phones"),
     add_birthday: ("add_birthday", "add_bd", "change_birthday", "change_bd"),

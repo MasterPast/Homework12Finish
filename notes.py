@@ -1,9 +1,9 @@
 from collections import UserDict
-from .constants import RED, GRAY, CYAN, MAGENTA, RESET, LEN_OF_NAME_FIELD
+from constants import RED, GRAY, CYAN, MAGENTA, RESET, LEN_OF_NAME_FIELD
 from datetime import datetime
 import os.path
 import pickle
-from .classes import Field
+from classes import Field
 
 
 class NoteError(Exception):

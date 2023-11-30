@@ -1,6 +1,6 @@
 from datetime import date, timedelta
 
-from .classes import (
+from classes import (
     Name,
     Phone,
     Email,
@@ -14,7 +14,7 @@ from .classes import (
     NoContactError,
 )
 
-from .constants import RED, RESET
+from constants import RED, RESET
 
 def user_error(func):
     def inner(*args):
